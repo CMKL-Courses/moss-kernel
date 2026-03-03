@@ -9,7 +9,7 @@ parser.add_argument("elf_executable", help="Location of compiled ELF executable 
 # QEMU options
 parser.add_argument("--init", default="/bin/sh", help="Location of the init process (in the rootfs)")
 parser.add_argument("--rootfs", default="moss.img", help="Location of the root filesystem image to use")
-parser.add_argument("--cpu", default="cortex-a72")
+parser.add_argument("--cpu", default="neoverse-n2")
 parser.add_argument("--smp", default=4, help="Number of CPU cores to use")
 parser.add_argument("--memory", default="2G")
 parser.add_argument("--debug", action="store_true", help="Enable QEMU debugging")
